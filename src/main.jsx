@@ -7,7 +7,7 @@ import { Sobre } from './Componentes/Sobre/Sobre';
 import { createBrowserRouter } from 'react-router-dom';
 import { Titulo } from './Componentes/Titulo/Titulo.jsx';
 import { Integrantes } from './Componentes/Integrantes/Integrantes.jsx';
-import { Paginador } from './Componentes/Paginador/Paginador.jsx';
+import { Proyectos } from './Componentes/Proyectos/Proyectos.jsx'
 
 
 const router = createBrowserRouter([
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
       , {
         path: '/Integrantes',
         element: <Integrantes />
+      }
+      , {
+        path: '/Proyectos',
+        element: <Proyectos />
       }
     ]
   },
