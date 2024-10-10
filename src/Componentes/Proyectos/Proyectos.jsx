@@ -11,9 +11,9 @@ function Proyectos() {
     ];
 
     return (
-        <div className='w-full mt-10 h-auto text-left px-36'>
+        <div className='w-full mt-10 h-auto text-left px-4 md:px-10 lg:px-36'>
             <h2 className='text-2xl text-center text-white mb-6 italic'>Últimos Proyectos de la comunidad</h2>
-            <div className='grid md:grid-cols-3 gap-6 w-auto'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
                 {proyectosData.map((proyecto, index) => (
                     <a
                         key={index}
@@ -36,5 +36,3 @@ function Proyectos() {
 }
 
 export { Proyectos };
-
-

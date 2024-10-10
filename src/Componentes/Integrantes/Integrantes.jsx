@@ -2,41 +2,17 @@ import { useState } from "react";
 
 const integrantesData = [
   { name: "Nicolas Suarez", role: "Owner Back-end", img: "/NicoL.png" },
-  {
-    name: "Paula Gonzalez",
-    role: "Administrador Front-end",
-    img: "/PaulaL.png",
-  },
-  {
-    name: "Esteban Sayago",
-    role: "Colaborador Front-end",
-    img: "/EstebanL.png",
-  },
+  { name: "Paula Gonzalez", role: "Administrador Front-end", img: "/PaulaL.png" },
+  { name: "Esteban Sayago", role: "Colaborador Front-end", img: "/EstebanL.png" },
   { name: "Matias Colazo", role: "Colaborador Front-end", img: "/MatiasL.png" },
-  {
-    name: "Brahian Pereyra",
-    role: "Colaborador Back-end",
-    img: "/BrahianL.png",
-  },
-  {
-    name: "Javier Rodriguez",
-    role: "Colaborador Front-end",
-    img: "/JavierL.png",
-  },
+  { name: "Brahian Pereyra", role: "Colaborador Back-end", img: "/BrahianL.png" },
+  { name: "Javier Rodriguez", role: "Colaborador Front-end", img: "/JavierL.png" },
   { name: "Alan Farias", role: "Colaborador Back-end", img: "/AlanL.png" },
   { name: "Nahuel Garrido", role: "Colaborador Back-end", img: "/NahuelL.png" },
   { name: "Manuel Burgos", role: "Colaborador Back-end", img: "/ManuelL.png" },
   { name: "Alan Cejas", role: "Colaborador Back-end", img: "/AlanCL.png" },
-  {
-    name: "Franco Caviglia",
-    role: "Colaborador Back-end",
-    img: "/FrancoL.png",
-  },
-  {
-    name: "Antonella Vincenti",
-    role: "Colaborador QA",
-    img: "/AntonellaL.png",
-  },
+  { name: "Franco Caviglia", role: "Colaborador Back-end", img: "/FrancoL.png" },
+  { name: "Antonella Vincenti", role: "Colaborador QA", img: "/AntonellaL.png" },
 ];
 
 const Integrantes = () => {
@@ -54,13 +30,13 @@ const Integrantes = () => {
   };
 
   return (
-    <div className="flex justify-center w-full h-auto p-4 text-center text-white md:p-8">
+    <div className="flex justify-center w-full h-auto p-4 mt-3text-center text-white md:p-8">
       <div className="flex flex-col w-full h-full px-0 border border-white rounded-md md:container backdrop-blur-3xl">
         <div className="w-auto m-3 text-4xl italic text-center text-white">
           <p> Dream Team ☁</p>
         </div>
 
-        <div className="grid justify-between grid-cols-1 gap-4 m-4 mt-6 md:gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 m-4 mt-6 sm:grid-cols-2 lg:grid-cols-2">
           {currentItems.map((integrante, index) => (
             <div
               key={index}
