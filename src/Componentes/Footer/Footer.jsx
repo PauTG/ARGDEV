@@ -1,13 +1,9 @@
-import { Link } from 'react-router-dom';
-
 function Footer() {
-    return (
-        <footer className="text-white text-center p-2 flex justify-center w-full">
-            Creado con mucho amor por la comunidad ❤️
-        </footer>
-    );
+  return (
+    <footer className="flex justify-center w-full px-2 py-4 text-center text-white">
+      Creado con mucho amor por la comunidad ❤️
+    </footer>
+  );
 }
-
-
 
 export { Footer };

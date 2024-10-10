@@ -1,23 +1,26 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
+const MenuItem = ({ text, to }) => {
+  return (
+    <li className="flex items-center justify-center p-2 text-sm border border-white rounded-md md:p-4 h-min">
+      <Link className="text-white text-nowrap" to={to}>
+        {text}
+      </Link>
+    </li>
+  );
+};
 
 function Navbar() {
-    return (
-        <nav className='flex gap-72 h-auto justify-around p-5'>
-            <img className='w-10' src="/logoB.png" alt="Logo" />
-            <ul className='flex gap-2 ml-96'>
-                <li className='border border-white rounded-md flex items-center justify-center text-sm w-40 h-12'>
-                    <Link className='text-white' to="/About">Quienes Somos</Link>
-                </li>
-                <li className='border border-white rounded-md flex items-center justify-center text-sm w-40 h-12'>
-                    <Link className='text-white' to="/Integrantes">Integrantes</Link>
-                </li>
-                <li className='border border-white rounded-md flex items-center justify-center text-sm w-40 h-12'>
-                    <Link className='text-white' to="/Proyectos">Proyectos</Link>
-                </li>
-            </ul>
-        </nav>
-    );
+  return (
+    <nav className="flex flex-col items-center justify-between h-auto gap-4 p-5 md:flex-row">
+      <img className="w-10" src="/logoB.png" alt="Logo" />
+      <ul className="flex gap-2">
+        <MenuItem text="Quienes Somos" to="/About" />
+        <MenuItem text="Integrantes" to="/Integrantes" />
+        <MenuItem text="Proyectos" to="/Proyectos" />
+      </ul>
+    </nav>
+  );
 }
-
 
 export { Navbar };
