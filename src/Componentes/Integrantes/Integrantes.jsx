@@ -30,13 +30,13 @@ const Integrantes = () => {
   };
 
   return (
-    <div className="flex justify-center w-full h-auto text-center text-white md:p-8 p-2"> {/* Cambié mt-0 a p-0 */}
-      <div className="flex flex-col w-full h-full px-0 border border-white rounded-md md:container backdrop-blur-3xl">
-        <div className="w-auto m-3 text-4xl italic text-center text-white">
+    <div className="flex text-center w-full text-white md:p-4 p-2"> {/* Cambié mt-0 a p-0 */}
+      <div className="flex flex-col h-[700px] border w-full border-white rounded-md backdrop-blur-3xl">
+        <div className="w-auto mt-9 text-4xl h-10 italic text-center content-center text-white">
           <p> Dream Team ☁</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 m-4 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 mt-11 p-6 sm:grid-cols-2 lg:grid-cols-2">
           {currentItems.map((integrante, index) => (
             <div
               key={index}
@@ -55,16 +55,16 @@ const Integrantes = () => {
           ))}
         </div>
 
-        <div className="flex justify-center my-4">
+        <div className="flex justify-center my-4 mt-14">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i + 1}
               onClick={() => handlePageChange(i + 1)}
               className={`mx-1 px-2 py-1 rounded-md ${
                 currentPage === i + 1
-                  ? "bg-white text-black"
-                  : "bg-gray-700 text-white"
-              } hover:bg-gray-600`}
+                  ? "bg-white text-blue-400"
+                  : "bg-blue-900 text-white"
+              } hover:bg-blue-950`}
             >
               {i + 1}
             </button>
