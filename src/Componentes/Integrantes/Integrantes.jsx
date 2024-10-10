@@ -33,7 +33,7 @@ const Integrantes = () => {
     };
 
     return (
-        <div className='text-center w-full p-5 h-auto m-8 flex px-24 text-white'>
+        <div className='text-center w-full justify-center h-auto p-9 flex text-white'>
             <div className='border border-white rounded-md w-full p-4 h-full flex px-24 md:container flex-col backdrop-blur-3xl'>
                 <div className='w-auto text-white text-center text-4xl italic m-3'>
                     <p> Dream Team ☁</p>

@@ -11,13 +11,19 @@ function Proyectos() {
     ];
 
     return (
-        <div className='w-full mt-10 h-auto text-left px-9 backdrop-blur-sm'>
+        <div className='w-full mt-10 h-auto text-left px-36'>
             <h2 className='text-2xl text-center text-white mb-6 italic'>Últimos Proyectos de la comunidad</h2>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+            <div className='grid md:grid-cols-3 gap-6 w-auto'>
                 {proyectosData.map((proyecto, index) => (
-                    <a key={index} href={proyecto.link} target="_blank" rel="noopener noreferrer" className='border border-white h-80 flex flex-col items-center justify-between rounded-3xl p-4 backdrop-blur-3xl hover:opacity-80 transition-opacity'>
+                    <a
+                        key={index}
+                        href={proyecto.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='border border-white h-80 flex flex-col rounded-3xl p-0 backdrop-blur-3xl hover:opacity-80 transition-opacity'
+                    >
                         <img className='w-full h-48 rounded-t-3xl object-cover' src={proyecto.img} alt={proyecto.title} />
-                        <div className='flex flex-col text-white items-center text-center mt-2 backdrop-blur-3xl'>
+                        <div className='flex flex-col text-white items-center text-center mt-2'>
                             <p className='font-bold'>{proyecto.title}</p>
                             <p className='italic'>{proyecto.desc1}</p>
                             <p className='italic'>{proyecto.desc2}</p>
@@ -30,4 +36,5 @@ function Proyectos() {
 }
 
 export { Proyectos };
+
 
