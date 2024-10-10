@@ -11,7 +11,7 @@ function Proyectos() {
     ];
 
     return (
-        <div className='w-full mt-10 h-auto text-left px-4 md:px-10 lg:px-36'>
+        <div className='w-full h-auto text-left px-4 md:px-10 lg:px-36'>
             <h2 className='text-2xl text-center text-white mb-6 italic'>Últimos Proyectos de la comunidad</h2>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
                 {proyectosData.map((proyecto, index) => (
@@ -23,7 +23,7 @@ function Proyectos() {
                         className='border border-white h-80 flex flex-col rounded-3xl p-0 backdrop-blur-3xl hover:opacity-80 transition-opacity'
                     >
                         <img className='w-full h-48 rounded-t-3xl object-cover' src={proyecto.img} alt={proyecto.title} />
-                        <div className='flex flex-col text-white items-center text-center mt-2'>
+                        <div className='flex flex-col text-white items-center text-center mt-6'>
                             <p className='font-bold'>{proyecto.title}</p>
                             <p className='italic'>{proyecto.desc1}</p>
                             <p className='italic'>{proyecto.desc2}</p>

@@ -4,10 +4,10 @@ import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden">
       <Navbar />
-      <div className="bg-[url(/Fondo.png)] w-screen h-screen fixed inset-0 -z-10 bg-no-repeat bg-cover bg-center"></div>
-      <div className="">
+      <div className="absolute inset-0 -z-10 bg-[url(/Fondo.png)] bg-no-repeat bg-cover bg-center"></div>
+      <div>
         <Outlet />
       </div>
       <Footer />

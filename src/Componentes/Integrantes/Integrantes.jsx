@@ -30,13 +30,13 @@ const Integrantes = () => {
   };
 
   return (
-    <div className="flex justify-center w-full h-auto p-4 mt-3text-center text-white md:p-8">
+    <div className="flex justify-center w-full h-auto text-center text-white md:p-8 p-2"> {/* Cambié mt-0 a p-0 */}
       <div className="flex flex-col w-full h-full px-0 border border-white rounded-md md:container backdrop-blur-3xl">
         <div className="w-auto m-3 text-4xl italic text-center text-white">
           <p> Dream Team ☁</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 m-4 mt-6 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 m-4 sm:grid-cols-2 lg:grid-cols-2">
           {currentItems.map((integrante, index) => (
             <div
               key={index}

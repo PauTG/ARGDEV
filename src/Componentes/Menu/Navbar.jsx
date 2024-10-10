@@ -13,7 +13,9 @@ const MenuItem = ({ text, to }) => {
 function Navbar() {
   return (
     <nav className="flex flex-col items-center justify-between h-auto gap-4 p-5 md:flex-row">
-      <img className="w-10" src="/logoB.png" alt="Logo" />
+      <a href="https://argentinadeveloper.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <img className="w-10 cursor-pointer" src="/logoB.png" alt="Logo" />
+      </a>
       <ul className="flex gap-2">
         <MenuItem text="Quienes Somos" to="/About" />
         <MenuItem text="Integrantes" to="/Integrantes" />
@@ -24,3 +26,4 @@ function Navbar() {
 }
 
 export { Navbar };
+

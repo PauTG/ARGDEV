@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 function Sobre() {
     return (
-        <div className='w-full mt-6 h-full text-left px-5 flex text-white'>
-            <div className='border border-white rounded-md w-full p-5 flex flex-col md:flex-row items-center justify-between backdrop-blur-3xl md:mt-40'>
+        <div className='w-full h-full text-left px-5 md:mt-28 flex text-white'>
+            <div className='border border-white rounded-md w-full p-5 flex flex-col md:flex-row items-center justify-between backdrop-blur-3xl'>
                 <div className='max-w-[800px] flex flex-col gap-3 p-4'>
                     <div className='flex flex-col mb-4'>
                         <p className='text-lg md:text-xl font-bold'>Quienes somos</p>
@@ -31,6 +31,5 @@ function Sobre() {
     );
 }
 
-export default Sobre;
 
 export { Sobre };
