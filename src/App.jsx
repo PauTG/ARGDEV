@@ -4,9 +4,8 @@ import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+<div className="bg-[url(/Fondo.png)] bg-center bg-cover min-h-screen">
       <Navbar />
-      <div className="absolute inset-0 -z-10 bg-[url(/Fondo.png)] bg-no-repeat bg-cover bg-center"></div>
       <div>
         <Outlet />
       </div>
