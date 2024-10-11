@@ -1,18 +1,17 @@
 import { Navbar } from "./Componentes/Menu/Navbar";
-import { Footer } from "./Componentes/Footer/Footer";
+import { Footer } from "./Componentes/Footer";
 import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="bg-[url(/FondoA.jpg)] bg-center bg-cover bg-no-repeat min-h-screen overflow-hidden">
+    <div className="bg-[url(/FondoA.jpg)] bg-center bg-cover bg-no-repeat min-h-screen flex flex-col">
       <Navbar />
-      <div>
+      <main className="flex-grow">
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </div>
   );
 };
-
 
 export default App;
