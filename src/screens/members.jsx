@@ -19,7 +19,7 @@ const Members = () => {
   return (
     <div className="container flex w-full p-2 mx-auto text-center text-white md:p-4">
       <div className="flex flex-col w-full border border-white rounded-md backdrop-blur-3xl">
-        <div className="w-auto mt-9 text-4xl rounded-lg drop-shadow-[0_0_24px_rgba(0,0,0,0.5)] h-10 italic text-center content-center text-white">
+        <div className="w-auto mt-8 text-4xl rounded-lg drop-shadow-[0_0_24px_rgba(0,0,0,0.5)] h-10 italic text-center content-center text-white">
           <p> Dream Team ☁</p>
         </div>
 
