@@ -16,12 +16,15 @@ function Sobre() {
   </p>
 
   <div className="flex justify-center drop-shadow-[0_0_45px_rgba(0,0,0,0.7)]">
-    <a href="https://argdeveloper.vercel.app" target="_blank" rel="noopener noreferrer">
-      <button className=" bg-teal-50 bg-opacity-10 hover:shadow-sm font-bold py-3 rounded-3xl w-screen max-w-xs text-white">
-        Ingresa a nuestro Discord (✿◡‿◡)
-      </button>
-    </a>
-  </div>
+  <a href="https://argdeveloper.vercel.app" target="_blank" rel="noopener noreferrer">
+    <button className=" bg-opacity-10 hover:shadow-sm font-bold py-3 rounded-3xl w-screen max-w-xs text-white border-4 border-transparent relative overflow-hidden">
+      <span className="absolute inset-0 border-2 rounded-3xl pointer-events-none"></span>
+      Ingresa a nuestro Discord (✿◡‿◡)
+    </button>
+  </a>
+</div>
+
+
 </div>
 
                 <div className='flex justify-center mt-4 md:mt-0 rounded-lg'>
