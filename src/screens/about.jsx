@@ -25,7 +25,7 @@ const About = () => {
             >
               <span className="absolute border-white text-white" />
               <span className="rounded-xl font-semibold flex justify-center items-center p-4 z-10 h-full w-full">
-              Ingresa a nuestro Discord (✿◡‿◡)
+                Ingresa a nuestro Discord (✿◡‿◡)
               </span>
             </a>
           </div>
