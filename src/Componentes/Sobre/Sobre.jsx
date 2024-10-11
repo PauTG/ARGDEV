@@ -7,7 +7,7 @@ function Sobre() {
                 <div className='max-w-[800px] flex flex-col gap-3 p-4'>
                     <div className='flex flex-col mb-4'>
                         <p className='text-lg md:text-2xl font-bold'>Quienes somos</p>
-                        <p className='italic text-2xl md:text-base'>en Argentina Developer 🇦🇷</p>
+                        <p className='italic text-2xl md:text-base'>en Argentina Developer</p>
                     </div>
 
                     <p className='text-base md:text-2xl font-bold mb-'>
