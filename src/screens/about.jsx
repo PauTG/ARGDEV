@@ -23,9 +23,9 @@ const About = () => {
               href="https://argdeveloper.vercel.app"
               className="w-96 h-12 rounded-xl relative flex items-center justify-center overflow-hidden border backdrop-blur-3xl transition duration-500 ease-in-out hover:scale-105"
             >
-              <span className="absolute border-2 border-white text-white" />
+              <span className="absolute border-white text-white" />
               <span className="rounded-xl font-semibold flex justify-center items-center p-4 z-10 h-full w-full">
-                Ingresa a nuestro Discord (✿◡‿◡)
+              Ingresa a nuestro Discord (✿◡‿◡)
               </span>
             </a>
           </div>
