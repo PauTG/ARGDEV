@@ -33,7 +33,7 @@ const About = () => {
 
         <div className="flex justify-center mt-4 rounded-lg md:mt-0">
           <img
-            className="w-32 max-w-full m-10 md:w-48 lg:w-60 md:m-28"
+            className="w-32 max-w-full m-10 md:w-48 lg:w-60 md:m-28 hover:scale-110 transition-transform duration-300"
             src="/logoB.png"
             alt="Logo"
           />

@@ -4,7 +4,7 @@ const Home = () => {
       <h1 className="text-4xl font-bold mb-4">Bienvenidos a nuestra comunidad</h1>
       <img
         src="/logoB.png"
-        className="mx-auto mt-14 h-64 w-auto cursor-pointer hover:rotate-12 transition-transform duration-300"
+        className="mx-auto mt-14 h-56 w-auto cursor-pointer hover:rotate-12 transition-transform duration-300"
         alt="Logo"
       />
     </div>
