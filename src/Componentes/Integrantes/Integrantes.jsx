@@ -43,10 +43,10 @@ const Integrantes = () => {
               href={integrante.linkedin} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex w-full h-32 p-2 text-center border border-white rounded-md backdrop-blur-lg hover:shadow-lg"
+              className="flex w-full h-36 p-2 text-center border border-white rounded-md backdrop-blur-lg hover:shadow-lg"
             >
               <img
-                className="mr-4 rounded-full h-28"
+                className="mr-4 rounded-full h-32"
                 src={integrante.img}
                 alt={integrante.name}
               />
@@ -58,7 +58,7 @@ const Integrantes = () => {
           ))}
         </div>
 
-        <div className="flex justify-center my-4 mt-14">
+        <div className="flex justify-center my-4 mt-7">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i + 1}
