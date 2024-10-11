@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className="flex flex-col items-center justify-between h-auto gap-4 p-5 md:flex-row">
       <Link to="/">
-        <img className="w-10 cursor-pointer" src="/logoB.png" alt="Logo" />
+        <img className="w-36 cursor-pointer" src="/LogoEntero.png" alt="Logo" />
       </Link>
       <ul className="flex gap-2">
         <MenuItem text="Quienes Somos" to="/About" />

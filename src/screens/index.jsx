@@ -1,10 +1,8 @@
 const Home = () => {
   return (
-    <div className="container">
-      <p className="text-white text-center text-4xl italic m-3 rounded-lg drop-shadow-[0_0_24px_rgba(0,0,0,0.7)]">
-        Bienvenidos a
-      </p>
-      {/* Acá va el logo */}
+    <div className="w-auto text-4xl rounded-lg drop-shadow-[0_0_24px_rgba(0,0,0,0.5)] h-auto italic text-center mt-36 text-white">
+      <h1 className="text-4xl font-bold mb-4">Bienvenidos a nuestra comunidad</h1>
+      <img src="/logoB.png" className="mx-auto mt-14 h-56 w-auto" />
     </div>
   );
 };

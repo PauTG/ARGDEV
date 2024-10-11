@@ -12,7 +12,7 @@ const About = () => {
             </p>
           </div>
 
-          <p className="mb-3 text-base font-bold text-white md:text-2xl">
+          <p className="mb-3 text-base font-semibold text-white md:text-2xl">
             Sin mucho pretexto, somos una comunidad orientada al desarrollo IT.
             Nuestro objetivo es acompañar a los que arrancan en el mundo de la
             programación, y aprender con ustedes 🤝🏼
@@ -21,13 +21,12 @@ const About = () => {
           <div className="flex justify-center drop-shadow-[0_0_45px_rgba(0,0,0,0.7)]">
             <a
               href="https://argdeveloper.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
+              className="w-96 h-12 rounded-xl relative flex items-center justify-center overflow-hidden border backdrop-blur-3xl transition duration-500 ease-in-out hover:scale-105"
             >
-              <button className="relative w-screen max-w-xs py-3 overflow-hidden font-bold text-white border-4 border-transparent bg-opacity-10 hover:shadow-sm rounded-3xl">
-                <span className="absolute inset-0 border-2 pointer-events-none rounded-3xl"></span>
+              <span className="absolute border-2 border-white text-white" />
+              <span className="rounded-xl font-semibold flex justify-center items-center p-4 z-10 h-full w-full">
                 Ingresa a nuestro Discord (✿◡‿◡)
-              </button>
+              </span>
             </a>
           </div>
         </div>
