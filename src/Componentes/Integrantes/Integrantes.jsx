@@ -1,18 +1,18 @@
 import { useState } from "react";
 
 const integrantesData = [
-  { name: "Nicolas Suarez", role: "Owner Back-end", img: "/NicoL.png" },
-  { name: "Paula Gonzalez", role: "Administrador Front-end", img: "/PaulaL.png" },
-  { name: "Esteban Sayago", role: "Colaborador Front-end", img: "/EstebanL.png" },
-  { name: "Matias Colazo", role: "Colaborador Front-end", img: "/MatiasL.png" },
-  { name: "Brahian Pereyra", role: "Colaborador Back-end", img: "/BrahianL.png" },
-  { name: "Javier Rodriguez", role: "Colaborador Front-end", img: "/JavierL.png" },
-  { name: "Alan Farias", role: "Colaborador Back-end", img: "/AlanL.png" },
-  { name: "Nahuel Garrido", role: "Colaborador Back-end", img: "/NahuelL.png" },
-  { name: "Manuel Burgos", role: "Colaborador Back-end", img: "/ManuelL.png" },
-  { name: "Alan Cejas", role: "Colaborador Back-end", img: "/AlanCL.png" },
-  { name: "Franco Caviglia", role: "Colaborador Back-end", img: "/FrancoL.png" },
-  { name: "Antonella Vincenti", role: "Colaborador QA", img: "/AntonellaL.png" },
+  { name: "Nicolas Suarez", role: "Owner Back-end", img: "/NicoL.png", linkedin: "https://www.linkedin.com/in/iamnicolas/" },
+  { name: "Paula Gonzalez", role: "Administrador Front-end", img: "/PaulaL.png", linkedin: "https://www.linkedin.com/in/paulatg/" },
+  { name: "Esteban Sayago", role: "Colaborador Front-end", img: "/EstebanL.png", linkedin: "https://www.linkedin.com/in/esteban-sayago/" },
+  { name: "Matias Colazo", role: "Colaborador Front-end", img: "/MatiasL.png", linkedin: "https://www.linkedin.com/in/matias-colazo/" },
+  { name: "Brahian Pereyra", role: "Colaborador Back-end", img: "/BrahianL.png", linkedin: "https://www.linkedin.com/in/brahianpdev/" },
+  { name: "Javier Rodriguez", role: "Colaborador Front-end", img: "/JavierL.png", linkedin: "https://www.linkedin.com/in/rodriguezjavierc/"},
+  { name: "Alan Farias", role: "Colaborador Back-end", img: "/AlanL.png", linkedin: "https://www.linkedin.com/in/alanfarias97/" },
+  { name: "Nahuel Garrido", role: "Colaborador Back-end", img: "/NahuelL.png", linkedin: "https://www.linkedin.com/in/nahuel-garrido/" },
+  { name: "Manuel Burgos", role: "Colaborador Back-end", img: "/ManuelL.png", linkedin: "https://www.linkedin.com/in/burgosmanuel-dev/" },
+  { name: "Alan Cejas", role: "Colaborador Back-end", img: "/AlanCL.png", linkedin: "https://www.linkedin.com/in/alandcejas01/" },
+  { name: "Franco Caviglia", role: "Colaborador Back-end", img: "/FrancoL.png", linkedin: "https://www.linkedin.com/in/francocaviglia/" },
+  { name: "Antonella Vincenti", role: "Colaborador QA", img: "/AntonellaL.png", linkedin: "https://www.linkedin.com/in/antonella-sasha-vincenti/" },
 ];
 
 const Integrantes = () => {
@@ -30,7 +30,7 @@ const Integrantes = () => {
   };
 
   return (
-    <div className="flex text-center w-full text-white md:p-4 p-2"> {/* Cambié mt-0 a p-0 */}
+    <div className="flex text-center w-full text-white md:p-4 p-2">
       <div className="flex flex-col h-[700px] border w-full border-white rounded-md backdrop-blur-3xl">
         <div className="w-auto mt-9 text-4xl h-10 italic text-center content-center text-white">
           <p> Dream Team ☁</p>
@@ -38,9 +38,12 @@ const Integrantes = () => {
 
         <div className="grid grid-cols-1 gap-4 mt-11 p-6 sm:grid-cols-2 lg:grid-cols-2">
           {currentItems.map((integrante, index) => (
-            <div
+            <a
               key={index}
-              className="flex w-full h-32 p-2 text-center border border-white rounded-md backdrop-blur-lg"
+              href={integrante.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex w-full h-32 p-2 text-center border border-white rounded-md backdrop-blur-lg hover:shadow-lg"
             >
               <img
                 className="mr-4 rounded-full h-28"
@@ -51,7 +54,7 @@ const Integrantes = () => {
                 <p>{integrante.name}</p>
                 <p className="italic">{integrante.role}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
