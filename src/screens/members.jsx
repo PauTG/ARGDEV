@@ -34,10 +34,10 @@ const Members = () => {
             <button
               key={i + 1}
               onClick={() => handlePageChange(i + 1)}
-              className={`mx-1 px-3 py-2 rounded-md ${
+              className={`mx-2 px-2 py-2 rounded-md ${
                 currentPage === i + 1
-                  ? "bg-blue-300 text-white"
-                  : "bg-blue-950 text-white hover:bg-blue-400" 
+                  ? "bg-blue-800 text-white"
+                  : "bg-blue-950 text-white hover:bg-blue-600" 
               } transition duration-200 ease-in-out`}
             >
               {i + 1}
