@@ -15,7 +15,7 @@ function Sobre() {
     Nuestro objetivo es acompañar a los que arrancan en el mundo de la programación, y aprender con ustedes 🤝🏼
   </p>
 
-  <div className="flex justify-center">
+  <div className="flex justify-center drop-shadow-[0_0_45px_rgba(0,0,0,0.7)]">
     <a href="https://argdeveloper.vercel.app" target="_blank" rel="noopener noreferrer">
       <button className=" bg-teal-50 bg-opacity-10 hover:shadow-sm font-bold py-3 rounded-3xl w-screen max-w-xs text-white">
         Ingresa a nuestro Discord (✿◡‿◡)
