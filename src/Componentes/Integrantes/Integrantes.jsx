@@ -32,7 +32,7 @@ const Integrantes = () => {
   return (
     <div className="flex text-center w-full text-white md:p-4 p-2">
       <div className="flex flex-col h-[700px] border w-full border-white rounded-md backdrop-blur-3xl">
-        <div className="w-auto mt-9 text-4xl h-10 italic text-center content-center text-white">
+        <div className="w-auto mt-9 text-4xl rounded-lg drop-shadow-[0_0_2px_rgba(0,0,0,0.5)] h-10 italic text-center content-center text-white">
           <p> Dream Team ☁</p>
         </div>
 
