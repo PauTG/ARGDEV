@@ -4,10 +4,10 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
-import { Proyectos } from "./Componentes/Proyectos/Proyectos.jsx";
 import Home from "./screens/index.jsx";
 import About from "./screens/about.jsx";
 import Members from "./screens/members.jsx";
+import Projects from "./screens/projects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/Proyectos",
-        element: <Proyectos />,
+        element: <Projects />,
       },
     ],
   },
