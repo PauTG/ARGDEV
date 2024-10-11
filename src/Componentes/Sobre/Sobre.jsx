@@ -4,7 +4,7 @@ function Sobre() {
     return (
         <div className='w-full h-full text-left px-4 md:mt-4 flex text-white'>
             <div className='border border-white rounded-md w-full p-5 flex flex-col h-[700px] md:flex-row items-center justify-between backdrop-blur-3xl'>
-            <div className="max-w-[800px] flex flex-col gap-3 p-4 bg-opacity-50 rounded-lg drop-shadow-[0_0_2px_rgba(0,0,0,0.7)] shadow-gray-400">
+            <div className="max-w-[800px] flex flex-col gap-3 p-4 bg-opacity-50 rounded-lg drop-shadow-[0_0_19px_rgba(0,0,0,0.4)] shadow-gray-400">
   <div className="flex flex-col mb-4">
     <p className="text-lg md:text-2xl font-bold text-white">Quienes somos</p>
     <p className="italic text-2xl md:text-base text-white">en Argentina Developer</p>
