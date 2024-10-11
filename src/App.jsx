@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="bg-[url(/Fondo.png)] bg-center bg-cover bg-no-repeat min-h-screen overflow-hidden">
+    <div className="bg-[url(/FondoA.jpg)] bg-center bg-cover bg-no-repeat min-h-screen overflow-hidden">
       <Navbar />
       <div>
         <Outlet />
