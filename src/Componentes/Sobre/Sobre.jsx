@@ -24,7 +24,7 @@ function Sobre() {
   </div>
 </div>
 
-                <div className='flex justify-center mt-4 md:mt-0 rounded-lg drop-shadow-[0_0_2px_rgba(0,0,0,0.7)]'>
+                <div className='flex justify-center mt-4 md:mt-0 rounded-lg'>
                     <img className='w-32 md:w-48 lg:w-60 max-w-full m-28' src="/logoB.png" alt="Logo" />
                 </div>
             </div>
