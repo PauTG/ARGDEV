@@ -3,11 +3,11 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
-import { Sobre } from "./Componentes/Sobre/Sobre";
 import { createBrowserRouter } from "react-router-dom";
-import { Titulo } from "./Componentes/Titulo/Titulo.jsx";
-import { Integrantes } from "./Componentes/Integrantes/Integrantes.jsx";
 import { Proyectos } from "./Componentes/Proyectos/Proyectos.jsx";
+import Home from "./screens/index.jsx";
+import About from "./screens/about.jsx";
+import Members from "./screens/members.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,15 +16,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Titulo />,
+        element: <Home />,
       },
       {
         path: "/About",
-        element: <Sobre />,
+        element: <About />,
       },
       {
         path: "/Integrantes",
-        element: <Integrantes />,
+        element: <Members />,
       },
       {
         path: "/Proyectos",
