@@ -20,7 +20,7 @@ const Members = () => {
     <div className="container flex w-full p-2 mx-auto text-center text-white md:p-4">
       <div className="flex flex-col w-full border border-white rounded-md backdrop-blur-3xl">
         <div className="w-auto mt-8 text-4xl rounded-lg drop-shadow-[0_0_24px_rgba(0,0,0,0.5)] h-10 italic text-center content-center text-white">
-          <p> Dream Team ☁</p>
+          <p>Team ☁</p>
         </div>
 
         <div className="grid grid-cols-1 gap-4 p-6 mt-11 sm:grid-cols-2 lg:grid-cols-2">
