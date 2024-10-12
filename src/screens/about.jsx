@@ -21,10 +21,12 @@ const About = () => {
           <div className="flex justify-center drop-shadow-[0_0_45px_rgba(0,0,0,0.7)]">
             <a
               href="https://argdeveloper.vercel.app"
-              className="w-96 h-12 rounded-xl relative flex items-center justify-center overflow-hidden border backdrop-blur-3xl transition duration-500 ease-in-out hover:scale-105"
+              target="_blank"
+              rel="noreferrer"
+              alt="Discord"
+              className="relative flex items-center justify-center h-12 overflow-hidden transition duration-500 ease-in-out border select-none w-96 rounded-xl hover:scale-105"
             >
-              <span className="absolute border-white text-white" />
-              <span className="rounded-xl font-semibold flex justify-center items-center p-4 z-10 h-full w-full">
+              <span className="z-10 flex items-center justify-center w-full h-full p-4 font-semibold rounded-xl">
                 Ingresa a nuestro Discord (✿◡‿◡)
               </span>
             </a>
@@ -33,7 +35,7 @@ const About = () => {
 
         <div className="flex justify-center mt-4 rounded-lg md:mt-0">
           <img
-            className="w-32 max-w-full m-10 md:w-48 lg:w-60 md:m-28 hover:scale-110 transition-transform duration-300"
+            className="w-32 max-w-full m-10 transition-transform duration-300 md:w-48 lg:w-60 md:m-28 hover:scale-110"
             src="/logoB.png"
             alt="Logo"
           />
