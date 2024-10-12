@@ -1,8 +1,8 @@
 const About = () => {
   return (
     <div className="container flex w-full p-2 mx-auto text-left text-white md:p-4">
-      <div className="border border-white rounded-md w-full p-5 flex flex-col h-[700px] md:flex-row items-center justify-between backdrop-blur-3xl">
-        <div className="max-w-[800px] m-10 flex flex-col gap-3 p-4 bg-opacity-50 rounded-lg drop-shadow-[0_0_19px_rgba(0,0,0,0.4)] shadow-gray-400">
+      <div className="border border-white rounded-md w-full p-5 flex flex-col md:h-[700px] md:flex-row items-center justify-between backdrop-blur-3xl">
+        <div className="max-w-[800px] md:m-10 flex flex-col gap-3 p-2 md:p-4 bg-opacity-50 rounded-lg drop-shadow-[0_0_19px_rgba(0,0,0,0.4)] shadow-gray-400">
           <div className="flex flex-col mb-4">
             <p className="text-lg font-bold text-white md:text-2xl">
               Quienes somos
@@ -24,7 +24,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
               alt="Discord"
-              className="relative flex items-center justify-center h-12 overflow-hidden transition duration-500 ease-in-out border select-none w-96 rounded-xl hover:scale-105"
+              className="w-full h-12 transition duration-500 ease-in-out border select-none max-w-96 rounded-xl hover:scale-105"
             >
               <span className="z-10 flex items-center justify-center w-full h-full p-4 font-semibold rounded-xl">
                 Ingresa a nuestro Discord (✿◡‿◡)
