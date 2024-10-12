@@ -2,3 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Navbar */
+  .item-menu {
+    @apply flex items-center justify-center text-sm border border-white rounded-md;
+  }
+
+  .item-menu-text {
+    @apply p-2 text-white text-nowrap md:p-4;
+  }
+
+  /* Cards */
+  .card {
+    @apply flex p-2 border border-white rounded-2xl;
+  }
+
+  .card:hover {
+    @apply shadow-lg;
+  }
+
+  .card-container {
+    @apply flex flex-col;
+  }
+
+  .card-title {
+    @apply font-bold text-white;
+  }
+
+  .card-text {
+    @apply italic text-white;
+  }
+}
