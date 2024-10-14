@@ -7,7 +7,7 @@ export const membersData = [
   },
   {
     name: "Paula Gonzalez",
-    role: "Administrador Front-end",
+    role: "Administrador Front-end - QA",
     img: "/PaulaL.png",
     linkedin: "https://www.linkedin.com/in/paulatg/",
   },
